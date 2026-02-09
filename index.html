@@ -115,7 +115,7 @@
     let noScale = 1;
 
     noBtn.addEventListener("click", () => {
-      noScale *= 0.28; // shrink factor each click
+      noScale *= 0.98; // shrink factor each click
       if (noScale < 0.20) noScale = 0.20; // don't vanish completely (unless you want)
       noBtn.style.transform = `scale(${noScale})`;
     });
