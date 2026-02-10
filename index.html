@@ -100,7 +100,7 @@
       <button id="maybe">MAYBE</button>
     </div>
 
-    <div class="hint">(What is your choice? MAYBE? 😏)</div>
+    <div class="hint">(What's your choice? 😏 Hint: Try clicking)</div>
   </div>
 
   <button id="yes">YES</button>
@@ -115,7 +115,7 @@
     let noScale = 1;
 
     noBtn.addEventListener("click", () => {
-      noScale *= 0.98; // shrink factor each click
+      noScale *= 0.80; // shrink factor each click
       if (noScale < 0.20) noScale = 0.20; // don't vanish completely (unless you want)
       noBtn.style.transform = `scale(${noScale})`;
     });
